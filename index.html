@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" type="text/css" />
+    <title>My Calendar</title>
+    <script src="app.js" defer type="module"></script>
+  </head>
+  <body>
+    <div id="calendar">
+      <div class="form-container">
+        <form class="form">
+          <div class="form-group">
+            <label for="event">Event</label>
+            <input type="text" name="event" id="event" />
+          </div>
+          <div class="form-group" v>
+            <label for="event-date">Date</label>
+            <input type="date" name="event-date" id="event-date" />
+          </div>
+          <div class="form-check">
+            <input
+              type="radio"
+              name="event-status"
+              id="event-status3"
+              value="3"
+            />
+            <label for="event-status3">Normal</label>
+            <input
+              type="radio"
+              name="event-status"
+              id="event-status2"
+              value="2"
+            />
+            <label for="event-status2">Important</label>
+            <input
+              type="radio"
+              name="event-status"
+              id="event-status1"
+              value="1"
+            />
+            <label for="event-status1">Very important</label>
+          </div>
+
+          <button type="submit">Add Event</button>
+        </form>
+      </div>
+      <div class="add-btn">
+        <svg
+          id="Layer_1"
+          height="512"
+          viewBox="0 0 24 24"
+          width="512"
+          xmlns="http://www.w3.org/2000/svg"
+          data-name="Layer 1"
+        >
+          <path
+            d="m12 0a12 12 0 1 0 12 12 12.013 12.013 0 0 0 -12-12zm5 13h-4v4h-2v-4h-4v-2h4v-4h2v4h4z"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
